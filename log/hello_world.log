@@ -1,0 +1,22 @@
+2020-07-23 00:16:30,262 {app} [123145452011520] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:16:32,966 {app} [123145457266688] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:16:41,767 {app} [123145452011520] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:18:04,193 {app} [123145557577728] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:20:09,440 {app} [123145512443904] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:20:59,893 {app} [4505718208] INFO  werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit). [file=_internal.py:113]
+2020-07-23 00:21:04,430 {app} [123145558818816] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:21:04,430 {app} [123145558818816] ERROR HelloWorld - Exception on / [GET]. [file=app.py:1892]
+Traceback (most recent call last):
+  File "/Users/nikitamehra/env/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nikitamehra/env/lib/python3.7/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/nikitamehra/env/lib/python3.7/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/nikitamehra/env/lib/python3.7/site-packages/flask/app.py", line 2131, in make_response
+    " {rv.__class__.__name__}.".format(rv=rv)
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a tuple.
+2020-07-23 00:21:04,446 {app} [123145558818816] INFO  werkzeug - 127.0.0.1 - - [23/Jul/2020 00:21:04] "[35m[1mGET / HTTP/1.1[0m" 500 -. [file=_internal.py:113]
+2020-07-23 00:23:07,811 {app} [4503907776] INFO  werkzeug -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit). [file=_internal.py:113]
+2020-07-23 00:23:48,573 {app} [123145417732096] DEBUG root - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:42]
+2020-07-23 00:23:48,573 {app} [123145417732096] INFO  werkzeug - 127.0.0.1 - - [23/Jul/2020 00:23:48] "[37mGET / HTTP/1.1[0m" 200 -. [file=_internal.py:113]
