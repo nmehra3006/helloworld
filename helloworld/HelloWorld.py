@@ -15,7 +15,7 @@ class HelloWorld:
     _data_controller = None
 
     def __init__(self):
-        self._app_logger = AppLogger.getInstance()
+        AppLogger.initializeLogger()
         self._data_controller = AppDataController.getInstance()
 
     def get_request_handler(self, request):
@@ -29,7 +29,7 @@ class HelloWorld:
         else:
             raw_response = """<p>Hello, World</p>"""
 
-        self._app_logger.writeDebugLog(str(url))
+            AppLogger.writeInfoLog(str(url))
 
         response = self._response_formatting_helper(raw_response)
         return response

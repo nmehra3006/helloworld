@@ -1,0 +1,1 @@
+2020-08-03 13:06:59,792 {app} [4513144256] INFO  Rotating Log - <Request 'http://127.0.0.1:5000/' [GET]>. [file=app_logger.py:63]

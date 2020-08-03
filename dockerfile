@@ -2,10 +2,10 @@ FROM python:3.6.8-slim
 WORKDIR /app
 
 #ADD HelloWorld.py /app
-COPY ./src /app/
+#COPY ./helloworld /app/
 COPY . /app/
 
-ADD requirements.txt /app 
+#ADD requirements.txt /app 
 
 RUN pip3 --trusted-host pypi.python.org install --no-cache-dir --upgrade pip setuptools
 
@@ -15,4 +15,4 @@ ENV PYTHONPATH /app
 
 EXPOSE 5000
 
-CMD  python /app/HelloWorld.py
+CMD  python /app/helloworld/HelloWorld.py

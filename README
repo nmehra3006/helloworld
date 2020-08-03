@@ -1,0 +1,7 @@
+#HelloWorld App 
+#Running the app on docker
+docker run -p 5000:5000/tcp helloworld:latest
+
+#Using docker compose 
+docker-compose run -p 5000:5000 app
+#Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`
